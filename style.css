@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+header {
+    width: 100%;
+    height: 4rem;
+    background: rgb(66, 136, 103);
+    /* position: fixed; */
+}
+
+aside {
+    /* position: fixed; */
+    left: 0;
+    top: 4rem;
+    bottom: 0;
+    background: rgb(42, 124, 124);
+    /* margin-top: 4rem; */
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    background: lightsalmon;
+    /* min-height: 100vh; */
+    display: none;
+    /* flex-direction: column; */
+    /* padding-left: 10rem;
+    padding-top: 4rem; */
+    width: 100%;
+}
+
+@media (min-width: 30.000em) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        width: 10rem;
+    }
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
