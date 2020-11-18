@@ -2,13 +2,13 @@
 
 # Laboration 3
 
-**Gruppmedlemmar**
+**Miniprojekt**
+
+*Gruppmedlemmar*
 
 Jonas Glingert
 Amanda Ståhlberg
 Josefin Enerlöv
-
-*Todeloo to you*
 
 *GitHub Pages*
 [Demo](https://glingmedia.github.io/todo/)
