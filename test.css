@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+}
+
+header {
+    /* position: fixed; */
+    background: red;
+    top: 0;
+    right: 0;
+    left: 0;
+    /* bottom: 0; */
+}
+
+main {
+    padding-top: 4rem;
+    background: green;
+    height: 100vh;
+}
