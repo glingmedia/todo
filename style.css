@@ -1,7 +1,3 @@
-/* * {
-    box-sizing: border-box;
-} */
-
 html {
     height: 100%;
 }
@@ -9,8 +5,6 @@ html {
 body {
     margin: 0;
     min-height: 100%;
-    /* display: flex;
-    flex-direction: column; */
 }
 
 header {
@@ -21,7 +15,6 @@ header {
 }
 
 aside {
-    /* position: fixed; */
     left: 0;
     top: 4rem;
     bottom: 0;
@@ -31,20 +24,15 @@ aside {
 }
 
 .container {
-    /* padding-top: 4rem; */
     display: flex;
     flex-direction: row;
     height: 100vh;
 }
 
 main {
-    padding-top: 4rem;
+    padding-top: 6rem;
     background: hsl(214, 35%, 85%);
-    /* height: 100vh; */
     display: none;
-    /* flex-direction: column; */
-    /* padding-left: 10rem;
-    padding-top: 4rem; */
     width: 100%;
 }
 
@@ -52,16 +40,7 @@ main {
     main {
         display: flex;
         flex-direction: column;
-        /* height: 100%; */
     }
-
-    /* body {
-        min-height: 100%;
-    }
-
-    html {
-        height: 100%;
-    } */
 
     aside {
         width: 20rem;
