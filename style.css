@@ -1,0 +1,63 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 6rem;
+    background: hsl(214, 35%, 40%);
+    position: fixed;
+}
+
+aside {
+    left: 0;
+    top: 4rem;
+    bottom: 0;
+    background: hsl(214, 35%, 60%);
+    padding-top: 6rem;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+main {
+    padding-top: 6rem;
+    background: hsl(214, 35%, 85%);
+    display: none;
+    width: 100%;
+}
+
+@media (min-width: 30.000em) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        width: 20rem;
+    }
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
