@@ -11,6 +11,9 @@ function startClock() {
 
 function updateClock() {
     const date = new Date();
+    updateWeekday(date);
+    updateDatetoday(date);
+    updateTimenow(date);
 
-    console.log(Date);
+    console.log(date)
 }
