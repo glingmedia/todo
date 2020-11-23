@@ -6,7 +6,9 @@
 
 *Gruppmedlemmar*
 
-Jonas Glingert  Amanda Ståhlberg  Josefin Enerlöv
+Jonas Glingert  
+Amanda Ståhlberg  
+Josefin Enerlöv  
 
 *GitHub Pages*
 [Link](https://glingmedia.github.io/todo/)
