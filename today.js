@@ -41,7 +41,7 @@ function updateTime(date) {
  */
 function updateWeekday(date) {
     const weekdayHolder = document.getElementById('weekday');
-    weekdayHolder.innertext = getWeekdayString(date);
+    weekdayHolder.innerText = getWeekdayString(date);
 }
 
 /**
@@ -50,7 +50,7 @@ function updateWeekday(date) {
  */
 function updateMonth(date) {
     const monthHolder = document.getElementById('month');
-    monthHolder.innertext = getMonthString(date);
+    monthHolder.innerText = getMonthString(date);
 }
 
 /**
