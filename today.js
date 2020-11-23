@@ -1,4 +1,5 @@
-window.addEventListener('load', main);
+window.onload = main;
+
 
 function main() {
     startClock();
@@ -12,16 +13,16 @@ function startClock() {
 function updateClock() {
     const date = new Date();
     
+    updateTime(date);
     updateWeekday(date);
-    updateDateToday(date);
-    updateTimeNow(date);
+    updateMonth(date);
 }
 
 /**
  * 
  * @param {Date} date 
  */
-function updateTimeNow(date) {
+function updateTime(date) {
     let hours = date.getHours();
     let minutes = date.getMinutes();
     let seconds = date.getSeconds();
@@ -30,7 +31,7 @@ function updateTimeNow(date) {
     minutes = formatDateValue(minutes);
     seconds = formatDateValue(seconds);
 
-    const timeHolder = document.getElementById('timenow');
+    const timeHolder = document.getElementById('time');
     timeHolder.innerText = hours + ':' + minutes + ':' + seconds;
 }
 
@@ -47,9 +48,9 @@ function updateWeekday(date) {
  * 
  * @param {Date} date 
  */
-function updateDateToday(date) {
-    const weekdayHolder = document.getElementById('datetoday');
-    weekdayHolder.innertext = getMonthString(date);
+function updateMonth(date) {
+    const monthHolder = document.getElementById('month');
+    monthHolder.innertext = getMonthString(date);
 }
 
 /**
