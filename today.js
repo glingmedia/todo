@@ -17,16 +17,28 @@ function updateClock() {
     updateTimeNow(date);
 }
 
+/**
+ * 
+ * @param {Date} date 
+ */
 function updateWeekday(date) {
     const weekdayHolder = document.getElementById('weekday');
     weekdayHolder.innertext = getWeekdayString(date);
 }
 
+/**
+ * 
+ * @param {Date} date 
+ */
 function updateDateToday(date) {
     const weekdayHolder = document.getElementById('datetoday');
     weekdayHolder.innertext = getMonthString(date);
 }
 
+/**
+ * 
+ * @param {Date} date 
+ */
 function updateTimeNow(date) {
     let hours = date.getHours();
     let minutes = date.getMinutes();
@@ -40,6 +52,10 @@ function updateTimeNow(date) {
     timeHolder.innerText = hours + ':' + minutes + ':' + seconds;
 }
 
+/**
+ * 
+ * @param {Date} date 
+ */
 function getWeekdayString(date) {
     const weekdayIndex = date.getDay();
     switch (weekdayIndex) {
@@ -53,6 +69,10 @@ function getWeekdayString(date) {
     }
 }
 
+/**
+ * 
+ * @param {Date} date 
+ */
 function getMonthString(date) {
     const dayofMonth = date.getDate();
     const monthIndex = date.getMonth();
@@ -74,6 +94,10 @@ function getMonthString(date) {
     }
 }
 
+/**
+ * 
+ * @param {Number} value 
+ */
 function formatDateValue(value) {
     if (value < 10) {
         return '0' + value;
