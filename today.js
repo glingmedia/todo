@@ -17,7 +17,8 @@ function updateClock() {
 }
 
 function updateWeekday(date) {
-
+    const weekdayHolder = document.getElementById('weekday');
+    weekdatHolder.innertext = getWeekdayString(date);
 }
 
 function updateDateToday(date) {
@@ -25,7 +26,18 @@ function updateDateToday(date) {
 }
 
 function updateTimeNow(date) {
-
+    let hours = date.getHours();
 }
 
-console.log(date);
+function getWeekdayString(date) {
+    const weekdayIndex = date.getDay();
+    switch (weekdayIndex) {
+        case 0: return '';
+        case 0: return '';
+        case 0: return '';
+        case 0: return '';
+        case 0: return '';
+        case 0: return '';
+        case 0: return '';
+    }
+}
