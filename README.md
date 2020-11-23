@@ -2,7 +2,7 @@
 
 # Laboration 3
 
-**Calendar with todo's**
+**Miniprojekt - Calendar with todo's**
 
 *Gruppmedlemmar*
 
