@@ -39,7 +39,7 @@ main {
     width: 100%;
 }
 
-@media (min-width: 30.000em) {
+@media (min-width: 30em) {
     main {
         display: flex;
         flex-direction: column;
@@ -60,7 +60,7 @@ h2 {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
-    margin: 1rem;
+    margin: 0.5rem;
     padding: 0;
 }
 
@@ -69,8 +69,10 @@ h3 {
     padding: 0;
 }
 
+.divider {
+    width: 85%;
+}
+
 .leaves {
-    /* justify-content: center;
-    align-items: center; */
     margin: auto;
 }
