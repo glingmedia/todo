@@ -11,4 +11,4 @@ Amanda Ståhlberg
 Josefin Enerlöv  
 
 [Link](https://glingmedia.github.io/todo/)
-(GitHub Pages)
+(Demo on GitHub Pages)
