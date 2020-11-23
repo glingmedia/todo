@@ -28,8 +28,15 @@ function updateDateToday(date) {
 
 function updateTimeNow(date) {
     let hours = date.getHours();
-    let hours = date.getHours();
-    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+
+    hours = formatDateValue(hours);
+    minutes = formatDateValue(minutes);
+    seconds = formatDateValue(seconds);
+
+    const timeHolder = document.getElementById('timenow');
+    timeHolder.innerText = hours + ':' + minutes + ':' + seconds;
 }
 
 function getWeekdayString(date) {
