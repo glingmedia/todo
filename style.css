@@ -18,7 +18,8 @@ aside {
     left: 0;
     top: 4rem;
     bottom: 0;
-    background: hsl(214, 35%, 60%);
+    background: linear-gradient(90deg, rgb(250, 192, 106), rgb(255, 255, 255));
+    /* background: hsl(214, 35%, 60%); */
     padding-top: 6rem;
     width: 100%;
 }
@@ -53,7 +54,7 @@ h1 {
 }
 
 h2 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     justify-content: center;
     margin-top: 2rem;

@@ -21,6 +21,23 @@ function updateClock() {
  * 
  * @param {Date} date 
  */
+function updateTimeNow(date) {
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+
+    hours = formatDateValue(hours);
+    minutes = formatDateValue(minutes);
+    seconds = formatDateValue(seconds);
+
+    const timeHolder = document.getElementById('timenow');
+    timeHolder.innerText = hours + ':' + minutes + ':' + seconds;
+}
+
+/**
+ * 
+ * @param {Date} date 
+ */
 function updateWeekday(date) {
     const weekdayHolder = document.getElementById('weekday');
     weekdayHolder.innertext = getWeekdayString(date);
@@ -33,23 +50,6 @@ function updateWeekday(date) {
 function updateDateToday(date) {
     const weekdayHolder = document.getElementById('datetoday');
     weekdayHolder.innertext = getMonthString(date);
-}
-
-/**
- * 
- * @param {Date} date 
- */
-function updateTimeNow(date) {
-    let hours = date.getHours();
-    let minutes = date.getMinutes();
-    let seconds = date.getSeconds();
-
-    hours = formatDateValue(hours);
-    minutes = formatDateValue(minutes);
-    seconds = formatDateValue(seconds);
-
-    const timeHolder = document.getElementById('timenow');
-    timeHolder.innerText = hours + ':' + minutes + ':' + seconds;
 }
 
 /**
@@ -74,23 +74,24 @@ function getWeekdayString(date) {
  * @param {Date} date 
  */
 function getMonthString(date) {
-    const dayofMonth = date.getDate();
+    const dayOfMonth = date.getDate();
     const monthIndex = date.getMonth();
-    const prefix = dayofMonth + 'HALLÅ';
+
+    const prefix = dayOfMonth + ' ';
 
     switch (monthIndex) {
-        case 0: return 'Januari';
-        case 1: return 'Februari';
-        case 2: return 'Mars';
-        case 3: return 'April';
-        case 4: return 'Maj';
-        case 5: return 'Juni';
-        case 6: return 'Juli';
-        case 7: return 'Augusti';
-        case 8: return 'September';
-        case 9: return 'Oktober';
-        case 10: return 'November';
-        case 11: return 'December';
+        case 0: return prefix + 'Januari';
+        case 1: return prefix + 'Februari';
+        case 2: return prefix + 'Mars';
+        case 3: return prefix + 'April';
+        case 4: return prefix + 'Maj';
+        case 5: return prefix + 'Juni';
+        case 6: return prefix + 'Juli';
+        case 7: return prefix + 'Augusti';
+        case 8: return prefix + 'September';
+        case 9: return prefix + 'Oktober';
+        case 10: return prefix + 'November';
+        case 11: return prefix + 'December';
     }
 }
 
