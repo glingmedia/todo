@@ -18,10 +18,12 @@ aside {
     left: 0;
     top: 4rem;
     bottom: 0;
-    background: linear-gradient(90deg, rgb(250, 192, 106), rgb(255, 255, 255));
+    background: linear-gradient(90deg, rgb(255, 208, 136), rgb(255, 255, 255));
     /* background: hsl(214, 35%, 60%); */
     padding-top: 6rem;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -65,4 +67,10 @@ h2 {
 h3 {
     margin: 0;
     padding: 0;
+}
+
+.leaves {
+    /* justify-content: center;
+    align-items: center; */
+    margin: auto;
 }
