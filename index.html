@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./main.js"></script>
     <script src="./todo.js"></script>
-    <script src="./today.js"></script>
     <script src="./calendar.js"></script>
+    <script src="./today.js"></script>
 </head>
 
 <body>
@@ -18,7 +18,11 @@
 
     <div class="container">  
         <aside>
-            <h2>ASIDE</h2>
+            <h2 id="weekday">veckodag</h2>
+            <h2 id="month">månad</h2>
+            <h2 id="time">tid</h2>
+            <hr class="divider">
+                              
             <form>
                 <label for="date">Datum för todos</label>
                 <br>
@@ -33,6 +37,8 @@
                 <button type="submit" id="submitBtn">Lägg till i listan</button>
             </form>
             <div id="todoDiv"></div>
+          <img class="leaves" src="leaves.png" alt="Autumn leaves">
+
         </aside>
 
         <main>
@@ -40,6 +46,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nesciunt iste deserunt quo maxime rem consequatur dicta sunt? Officiis iste natus facere dignissimos animi repudiandae aspernatur cupiditate magni, earum ea.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nesciunt iste deserunt quo maxime rem consequatur dicta sunt? Officiis iste natus facere dignissimos animi repudiandae aspernatur cupiditate magni, earum ea.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nesciunt iste deserunt quo maxime rem consequatur dicta sunt? Officiis iste natus facere dignissimos animi repudiandae aspernatur cupiditate magni, earum ea.</p>
+
         </main> 
     </div>   
 </body>

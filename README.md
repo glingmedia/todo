@@ -2,13 +2,13 @@
 
 # Laboration 3
 
-**Miniprojekt**
+**Miniprojekt - Calendar with todo's**
 
 *Gruppmedlemmar*
 
-Jonas Glingert
-Amanda Ståhlberg
-Josefin Enerlöv
+Jonas Glingert  
+Amanda Ståhlberg  
+Josefin Enerlöv  
 
-*GitHub Pages*
-[Demo](https://glingmedia.github.io/todo/)
+[Link](https://glingmedia.github.io/todo/)
+(Demo on GitHub Pages)
