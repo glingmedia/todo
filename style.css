@@ -23,10 +23,9 @@ header {
 
  .previous, .next{
     color: black;
-    padding: 15rem;
-    
+    padding-right: 2rem;
+    padding-left: 2rem;    
 }
-
 
 a :hover {
     color: white;

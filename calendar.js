@@ -1,6 +1,6 @@
 async function fetchDaysFromApi() {
     try {
-        const url = 'http://api.dryg.net/dagar/v2.1/2020/11';
+        const url = 'http://sholiday.faboul.se/dagar/v2.1/2020/11';
         const result = await fetch(url);
         const data = await result.json();
     
