@@ -1,10 +1,3 @@
-window.addEventListener('load', main);
-
-
-function main() {
-    startClock();
-}
-
 function startClock() {
     updateClock();
     setInterval(updateClock, 1000);
@@ -18,10 +11,6 @@ function updateClock() {
     updateMonth(date);
 }
 
-/**
- * 
- * @param {Date} date 
- */
 function updateTime(date) {
     let hours = date.getHours();
     let minutes = date.getMinutes();
@@ -35,28 +24,16 @@ function updateTime(date) {
     timeHolder.innerText = hours + ':' + minutes + ':' + seconds;
 }
 
-/**
- * 
- * @param {Date} date 
- */
 function updateWeekday(date) {
     const weekdayHolder = document.getElementById('weekday');
     weekdayHolder.innerText = getWeekdayString(date);
 }
 
-/**
- * 
- * @param {Date} date 
- */
 function updateMonth(date) {
     const monthHolder = document.getElementById('month');
     monthHolder.innerText = getMonthString(date);
 }
 
-/**
- * 
- * @param {Date} date 
- */
 function getWeekdayString(date) {
     const weekdayIndex = date.getDay();
     switch (weekdayIndex) {
@@ -70,10 +47,6 @@ function getWeekdayString(date) {
     }
 }
 
-/**
- * 
- * @param {Date} date 
- */
 function getMonthString(date) {
     const dayOfMonth = date.getDate();
     const monthIndex = date.getMonth();
@@ -96,10 +69,6 @@ function getMonthString(date) {
     }
 }
 
-/**
- * 
- * @param {Number} value 
- */
 function formatDateValue(value) {
     if (value < 10) {
         return '0' + value;

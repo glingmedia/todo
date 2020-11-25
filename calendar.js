@@ -26,8 +26,8 @@ function createListItems(daysOfMonth) {
     for (const day of daysOfMonth) {
         const dayDiv = document.createElement('div');
         dayDiv.classList = 'dayDiv'
-        let dag = new Date(day.datum).getDate()
-        dayDiv.innerHTML = day.veckodag + '</br>' + dag;
+        let dayToday = new Date(day.datum).getDate()
+        dayDiv.innerHTML = dayToday;
         listItems.push(dayDiv);
     }
     
