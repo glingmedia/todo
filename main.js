@@ -5,6 +5,8 @@ function main(){
 }
 
 function addEventListeners() {
+    fetchDaysFromApi()
     addTodosOnButton()
     printTodosInAside()
 }
+

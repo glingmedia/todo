@@ -58,6 +58,20 @@ main {
     width: 100%;
 }
 
+#calendar-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.dayDiv {
+    height: 5rem;
+    background: rgb(140, 140, 236);
+}
+
+
 @media (min-width: 30em) {
     main {
         display: flex;
