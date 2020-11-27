@@ -1,54 +1,44 @@
 html {
     height: 100%;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
 }
 
 body {
     margin: 0;
     min-height: 100%;
-    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;    
 }
 
 header {
     width: 100%;
     position: fixed;
-    height: 6rem;
-    /* background: linear-gradient(90deg, rgba(240, 105, 64, 1), rgba(252, 193, 154, 1)) image(url("leaves4.png")); */
+    height: 6rem;    
     font-family: 'Montserrat', sans-serif;
-
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-image: url("leaves4.png"); */
-
-    background-image: url("leaves6.png"); /* fallback */
-    /* background-image: url("leaves6.png"), linear-gradient(rgba(240, 105, 64), rgb(209, 53, 49)); */
-    background-image: url("leaves6.png"), linear-gradient(rgba(209, 53, 49), rgb(240, 105, 64));
-    
+    background-image: url("leaves.png");
+    background-image: url("leaves.png"), linear-gradient(rgba(209, 53, 49), rgb(240, 105, 64));
     background-position: center;
     background-repeat: no-repeat;
-    /* background-position: 0% 10%; */
     border-bottom: 1px solid rgb(211, 211, 211);
 }
 
- .previous, .next{
+.previous, .next{
     color: black;
     padding-right: 2rem;
     padding-left: 2rem;    
 }
 
-a :hover {
+a:hover {
     color: white;
 }
-
 
 aside {
     left: 0;
     top: 4rem;
     bottom: 0;
     background: linear-gradient(90deg, rgb(255, 208, 136), rgb(255, 255, 255));
-    /* background: hsl(214, 35%, 60%); */
     padding-top: 7.5rem;
     width: 100%;
     display: flex;
@@ -71,6 +61,13 @@ main {
     padding-right: 3rem;
 }
 
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 #calendar-container {
     display: grid;
     grid-template-rows: auto;
@@ -87,8 +84,6 @@ main {
     justify-content: space-evenly;
     gap: 0.5rem;
     background: linear-gradient(90deg, hsl(60, 39%, 63%), hsl(41, 55%, 58%));
-    /* background: rgb(68, 129, 93); */
-    /* padding: 0.5rem; */
 }
 
 .calender-title h3 {
@@ -97,7 +92,6 @@ main {
 }
 
 .dayDiv {
-    /* height: 6rem; */
     background: hsla(60, 39%, 63%, 0.3);
     font-size: 1.5rem;
     padding: 1rem;

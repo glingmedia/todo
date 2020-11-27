@@ -17,7 +17,7 @@
 <body>
     <header>
        <a class="previous" href="#"><i class="fas fa-angle-left"></i></a>
-       <h1 class="month" id="month-title">November</h1>
+       <h1>November</h1>
        <a class="next" href="#"><i class="fas fa-angle-right"></i></a>
     </header>
 
@@ -27,21 +27,25 @@
             <h2 id="month">månad</h2>
             <h2 id="time">tid</h2>
             <hr class="divider">
-                              
-            <form>
-                <label for="date">Datum för todos</label>
-                <br>
-                <input type="date" id="date">
-                <br>
+                   
+            <div class="todo-container">           
+                <form>
+                    <label for="date">Datum för todos</label>
+                    <br>
+                    <input type="date" id="date">
+                    <br>
     
-                <label for="text">Ny todo</label>
-                <br>
-                <input type="text" id="todoInput">
-                <br>
+                    <label for="text">Ny todo</label>
+                    <br>
+                    <input type="text" id="todoInput">
+                    <br>
     
-                <button type="submit" id="submitBtn">Lägg till i listan</button>
-            </form>
-            <div id="todoDiv"></div>
+                    <button type="submit" id="submitBtn">Lägg till i listan</button>
+                </form>
+
+                <div id="todoDiv"></div>
+                
+            </div>
         </aside>
 
         <main>
@@ -55,7 +59,6 @@
                 <h3>LÖRDAG</h3>
             </div>
             <div id="calendar-container"></div>
-
         </main> 
     </div>   
 </body>
