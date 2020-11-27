@@ -1,11 +1,11 @@
 
 
-function addTodosOnButton(){
+function addTodoOnButton(){
     const buttonTodo = document.getElementById('submitBtn')
-    buttonTodo.addEventListener('click', addTodos)
+    buttonTodo.addEventListener('click', addTodo)
 }
 
-function addTodos() {
+function addTodo() {
     const todoDate = document.getElementById('date').value;
     const todoInput = document.getElementById('todoInput').value;
     

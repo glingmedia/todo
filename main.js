@@ -7,6 +7,6 @@ function main(){
 function addEventListeners() {
     fetchDaysFromApi()
     startClock()
-    addTodosOnButton()
+    addTodoOnButton()
     printTodosInAside()
 }

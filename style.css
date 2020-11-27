@@ -6,7 +6,7 @@ body {
     margin: 0;
     min-height: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;    
+    font-weight: 400;    
 }
 
 header {
@@ -49,16 +49,38 @@ aside {
 .container {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 main {
-    padding-top: 8rem;
     background: linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 208, 136));
     display: none;
     width: 100%;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding: 8rem 3rem 2rem 3rem;
+}
+
+#date {
+    margin-bottom: 1rem;
+}
+
+#todoInput {
+    margin-bottom: 0.5rem;
+    /* max-width: 8.5rem; */
+}
+
+button {
+    background: linear-gradient(90deg, hsl(41, 55%, 58%), hsl(60, 39%, 63%));
+    /* background: linear-gradient(90deg, hsl(60, 39%, 63%), hsl(41, 55%, 58%)); */
+    border: 1px solid;
+    height: 1.5rem;
+    width: 9.32rem;
+    filter: contrast(140%)
+}
+
+button:hover {
+    cursor: pointer;
+    /* background: linear-gradient(90deg, hsl(60, 39%, 63%), hsl(41, 55%, 58%)); */
+    filter: contrast(160%)
 }
 
 .todo-container {
@@ -74,6 +96,12 @@ main {
     grid-template-columns: repeat(7, 1fr);
     gap: 0.5rem;
     font-size: 1rem;
+}
+
+.calendar-item {
+    /* background: red; */
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .calendar-title {
@@ -94,12 +122,13 @@ main {
 .dayDiv {
     background: hsla(60, 39%, 63%, 0.3);
     font-size: 1.5rem;
+    font-weight: 600;
     padding: 1rem;
     min-height: 4rem;
 }
 
 
-@media (min-width: 30em) {
+@media (min-width: 60em) {
     main {
         display: flex;
         flex-direction: column;
@@ -113,6 +142,8 @@ main {
 h1 {
     margin: 0;
     padding: 0;
+    font-weight: 400;
+    font-size: 3rem;
 }
 
 h2 {
@@ -126,10 +157,12 @@ h2 {
 h3 {
     margin: 0;
     padding: 0;
+    font-weight: 500;
 }
 
 .divider {
     width: 85%;
+    margin-bottom: 1rem;
 }
 
 .leaves {
