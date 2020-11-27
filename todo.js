@@ -32,7 +32,7 @@ function addToStorage(todo) {
 function printTodosInAside() {
     const aside = document.getElementById('todoDiv')
     aside.innerHTML = ""
-    const todo = JSON.parse(localStorage.getItem("todoList"))
+    const todo = JSON.parse(localStorage.getItem("todoList")) || []
 
     for (let i = 0; i < todo.length; i++) {
         const todosToPrint = todo[i];
@@ -60,12 +60,10 @@ function printTodosInAside() {
         divForTodo.appendChild(textDiv)
 
         aside.appendChild(divForTodo)
-        console.log(todosToPrint)
+        //console.log(todosToPrint)
     }
 }
 
 function deleteTodo(){
     console.log('add function here for delete todo')
 }
-
- 
