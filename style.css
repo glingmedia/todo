@@ -79,7 +79,7 @@ main {
     font-size: 1rem;
 }
 
-.calender-title {
+.calendar-title {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(7, 1fr);
@@ -97,10 +97,11 @@ main {
 }
 
 .dayDiv {
-    height: 6rem;
+    /* height: 6rem; */
     background: hsla(60, 39%, 63%, 0.3);
     font-size: 1.5rem;
     padding: 1rem;
+    min-height: 4rem;
 }
 
 
