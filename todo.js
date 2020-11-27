@@ -51,7 +51,7 @@ function printTodosInAside() {
 
         const deleteBtn = document.createElement('p')
         deleteBtn.classlist = 'deleteBtn'
-        deleteBtn.innerText = '✔️'
+        deleteBtn.innerText = '✖️'
         deleteBtn.addEventListener('click', deleteTodo)
 
         textDiv.appendChild(textTodo)

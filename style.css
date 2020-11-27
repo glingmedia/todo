@@ -74,7 +74,8 @@ button {
     border: 1px solid;
     height: 1.5rem;
     width: 9.32rem;
-    filter: contrast(140%)
+    filter: contrast(140%);
+    margin-bottom: 1rem;
 }
 
 button:hover {
@@ -100,7 +101,8 @@ button:hover {
 
 .calendar-item {
     /* background: red; */
-    font-size: 1rem;
+    font-size: 0.8rem;
+    font-style: italic;
     font-weight: 400;
 }
 
@@ -127,6 +129,21 @@ button:hover {
     min-height: 4rem;
 }
 
+.textDiv {
+    display: flex;
+    /* background: rgb(164, 164, 189); */
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.textDiv p {
+    padding: 0;
+    margin: 0;
+}
 
 @media (min-width: 60em) {
     main {
@@ -158,6 +175,18 @@ h3 {
     margin: 0;
     padding: 0;
     font-weight: 500;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .divider {
