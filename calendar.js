@@ -28,7 +28,10 @@ function createListItems(daysOfMonth) {
     
     for (const day of daysOfMonth) {
         const todosToday = document.createElement('p')
-        todosToday.innerText = 'todo'
+        
+        todosToday.innerText = ''
+
+        todosToday.classList = 'calendar-item'
         
         const dayDiv = document.createElement('div');
         dayDiv.classList = 'dayDiv'
@@ -47,7 +50,7 @@ function createListItems(daysOfMonth) {
                 count++
             }
         }
-        todosToday.innerText = count
+        todosToday.innerText = 'Todos:' + ' ' + count
     }
     
     return listItems;

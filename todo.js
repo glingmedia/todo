@@ -1,11 +1,11 @@
 
 
-function addTodosOnButton(){
+function addTodoOnButton(){
     const buttonTodo = document.getElementById('submitBtn')
-    buttonTodo.addEventListener('click', addTodos)
+    buttonTodo.addEventListener('click', addTodo)
 }
 
-function addTodos() {
+function addTodo() {
     const todoDate = document.getElementById('date').value;
     const todoInput = document.getElementById('todoInput').value;
     
@@ -51,7 +51,7 @@ function printTodosInAside() {
 
         const deleteBtn = document.createElement('p')
         deleteBtn.classlist = 'deleteBtn'
-        deleteBtn.innerText = '✔️'
+        deleteBtn.innerText = '✖️'
         deleteBtn.addEventListener('click', deleteTodo)
 
         textDiv.appendChild(textTodo)
