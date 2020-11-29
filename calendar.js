@@ -50,7 +50,7 @@ function createListItems(daysOfMonth) {
                 count++
             }
         }
-        todosToday.innerText = 'Todos:' + ' ' + count
+        todosToday.innerText = 'Memos:' + ' ' + count
     }
     
     return listItems;

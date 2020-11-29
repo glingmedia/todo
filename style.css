@@ -38,7 +38,7 @@ aside {
     left: 0;
     top: 4rem;
     bottom: 0;
-    background: linear-gradient(90deg, rgb(255, 208, 136), rgb(255, 255, 255));
+    background: linear-gradient(90deg,  rgb(255, 208, 136), rgb(255, 255, 255));
     padding-top: 7.5rem;
     width: 100%;
     display: flex;
@@ -73,7 +73,7 @@ button {
     /* background: linear-gradient(90deg, hsl(60, 39%, 63%), hsl(41, 55%, 58%)); */
     border: 1px solid;
     height: 1.5rem;
-    width: 9.32rem;
+    width: 9.3rem;
     filter: contrast(140%);
     margin-bottom: 1rem;
 }
