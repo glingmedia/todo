@@ -1,6 +1,14 @@
 async function fetchDaysFromApi() {
     try {
+        // const today = new Date();
+        // let month = today.getMonth();
+
+        //För att hämta alla månader
+        // let month = today.getMonth()+1;
+        // const url = 'http://sholiday.faboul.se/dagar/v2.1/2020/'+month;
+
         const url = 'http://sholiday.faboul.se/dagar/v2.1/2020/11';
+
         const result = await fetch(url);
         const data = await result.json();
     
@@ -39,10 +47,10 @@ function createListItems(daysOfMonth) {
         dayDiv.innerHTML = dayToday;
         listItems.push(dayDiv);
         //console.log(dayToday)
-        console.log(day.datum)
+        //console.log(day.datum)
         dayDiv.appendChild(todosToday)
         
-        console.log(listWithTodo)
+        //console.log(listWithTodo)
 
         let count = 0
         for (const todo of listWithTodo) {

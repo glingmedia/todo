@@ -22,6 +22,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     border-bottom: 1px solid rgb(211, 211, 211);
+    z-index: 100;
 }
 
 .previous, .next{
@@ -75,7 +76,8 @@ button {
     height: 1.5rem;
     width: 9.3rem;
     filter: contrast(140%);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    z-index: 99;
 }
 
 button:hover {
@@ -129,12 +131,38 @@ button:hover {
     min-height: 4rem;
 }
 
-.textDiv {
+.todoDate {
     display: flex;
-    /* background: rgb(164, 164, 189); */
+    /* background: rgb(101, 101, 231); */
     padding: 0;
     margin: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.todoDate p {
+    /* padding: 0; */
+    margin: 0;
+    padding-left: 1rem;
+    align-items: flex-end;
+    font-size: 0.8rem;
+    filter: hue-rotate(150deg);
+}
+
+.todoDate p:hover {
+    filter: hue-rotate(0deg);
+    cursor: pointer;
+}
+
+.textDiv {
+    display: flex;
+    /* background: rgb(151, 151, 170); */
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2rem;
     justify-content: center;
     font-size: 1rem;
     font-weight: 500;
@@ -182,12 +210,12 @@ h3 {
     padding: 0;
 }
 
-h5 {
+/* h5 {
     margin: 0;
     padding: 0.5rem;
     font-size: 1rem;
     font-weight: 600;
-}
+} */
 
 .divider {
     width: 85%;
