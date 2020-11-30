@@ -88,10 +88,5 @@ function deleteTodo(clickEvent) {
 
     // listWithTodo.findindex()
          
-    // localStorage.removeItem(listWithTodo)
-  
-    
-    
-    
-    
+    // localStorage.removeItem(listWithTodo) 
 }
