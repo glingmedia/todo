@@ -66,15 +66,14 @@ main {
 
 #todoInput {
     margin-bottom: 0.5rem;
-    /* max-width: 8.5rem; */
+    max-width: 8.5rem;
 }
 
 button {
     background: linear-gradient(90deg, hsl(41, 55%, 58%), hsl(60, 39%, 63%));
-    /* background: linear-gradient(90deg, hsl(60, 39%, 63%), hsl(41, 55%, 58%)); */
     border: 1px solid;
     height: 1.5rem;
-    width: 9.3rem;
+    width: 6.5rem;
     filter: contrast(140%);
     margin-bottom: 2rem;
     z-index: 99;
@@ -82,7 +81,6 @@ button {
 
 button:hover {
     cursor: pointer;
-    /* background: linear-gradient(90deg, hsl(60, 39%, 63%), hsl(41, 55%, 58%)); */
     filter: contrast(160%)
 }
 
@@ -102,7 +100,6 @@ button:hover {
 }
 
 .calendar-item {
-    /* background: red; */
     font-size: 0.8rem;
     font-style: italic;
     font-weight: 400;
@@ -133,7 +130,6 @@ button:hover {
 
 .todoDate {
     display: flex;
-    /* background: rgb(101, 101, 231); */
     padding: 0;
     margin: 0;
     margin-bottom: 0.5rem;
@@ -144,7 +140,6 @@ button:hover {
 
 
 .todoDate p {
-    /* padding: 0; */
     margin: 0;
     padding-left: 1rem;
     align-items: flex-end;
@@ -159,7 +154,6 @@ button:hover {
 
 .textDiv {
     display: flex;
-    /* background: rgb(151, 151, 170); */
     padding: 0;
     margin: 0;
     margin-bottom: 2rem;
@@ -209,13 +203,6 @@ h3 {
     margin: 0;
     padding: 0;
 }
-
-/* h5 {
-    margin: 0;
-    padding: 0.5rem;
-    font-size: 1rem;
-    font-weight: 600;
-} */
 
 .divider {
     width: 85%;
