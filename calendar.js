@@ -25,15 +25,12 @@ function presentDays(allDaysForNovember) {
     const daysOfMonth = getDays(allDaysForNovember);
     const listItems = createListItems(daysOfMonth);
     container.append(...listItems);    
-    //console.log(daysOfMonth)
 }
 
 function createListItems(daysOfMonth) {
     const listItems = []
     let listWithTodo = JSON.parse(localStorage.getItem("todoList")) || []
-    // console.log(listWithTodo)
-    
-    
+  
     for (const day of daysOfMonth) {
         const todosToday = document.createElement('p')
         
@@ -46,12 +43,9 @@ function createListItems(daysOfMonth) {
         let dayToday = new Date(day.datum).getDate()
         dayDiv.innerHTML = dayToday;
         listItems.push(dayDiv);
-        //console.log(dayToday)
-        //console.log(day.datum)
+
         dayDiv.appendChild(todosToday)
         
-        //console.log(listWithTodo)
-
         let count = 0
         for (const todo of listWithTodo) {
             if (todo.date == day.datum) {

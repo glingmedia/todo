@@ -1,5 +1,3 @@
-
-
 function addTodoOnButton(){
     const buttonTodo = document.getElementById('submitBtn')
     buttonTodo.addEventListener('click', addTodo)

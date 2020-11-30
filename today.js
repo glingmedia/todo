@@ -6,34 +6,38 @@ function startClock() {
 function updateClock() {
     const date = new Date();
     
-    updateTime(date);
-    updateWeekday(date);
-    updateMonth(date);
+    printTime(date);
+    printWeekday(date);
+    printMonth(date);
 }
 
-function updateTime(date) {
+//Printar ut tiden
+function printTime(date) {
     let hours = date.getHours();
     let minutes = date.getMinutes();
     let seconds = date.getSeconds();
 
-    hours = formatDateValue(hours);
-    minutes = formatDateValue(minutes);
-    seconds = formatDateValue(seconds);
+    hours = formatTimeValue(hours);
+    minutes = formatTimeValue(minutes);
+    seconds = formatTimeValue(seconds);
 
     const timeHolder = document.getElementById('time');
     timeHolder.innerText = hours + ':' + minutes + ':' + seconds;
 }
 
-function updateWeekday(date) {
-    const weekdayHolder = document.getElementById('weekday');
+//Printar ut veckodag
+function printWeekday(date) {
+    const weekdayHolder = document.getElementById('dayofweek');
     weekdayHolder.innerText = getWeekdayString(date);
 }
 
-function updateMonth(date) {
+//Printar ut månad
+function printMonth(date) {
     const monthHolder = document.getElementById('month');
     monthHolder.innerText = getMonthString(date);
 }
 
+//Formaterar veckodagen korrekt istället för bara ett värde
 function getWeekdayString(date) {
     const weekdayIndex = date.getDay();
     switch (weekdayIndex) {
@@ -47,6 +51,7 @@ function getWeekdayString(date) {
     }
 }
 
+//Formaterar månaden korrekt istället för bara ett värde
 function getMonthString(date) {
     const dayOfMonth = date.getDate();
     const monthIndex = date.getMonth();
@@ -69,7 +74,8 @@ function getMonthString(date) {
     }
 }
 
-function formatDateValue(value) {
+// Lägger till en nolla om värdet visar under 10
+function formatTimeValue(value) {
     if (value < 10) {
         return '0' + value;
     }

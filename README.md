@@ -2,10 +2,11 @@
 
 # Laboration 3
 
-**Miniprojekt - Calendar with todo's**
+**Miniprojekt**  
+*Höstkalender med memos*
 
-Vi har uppmärksammat en liten bugg då man skapar en todo så "refreshas" hela sidan.  
-Detta påverkar dock inte funktionaliteten i stort men sidan blinkar till.
+Vi har uppmärksammat en liten bugg då man skapar ett memo så "refreshas" hela sidan.  
+Detta påverkar inte funktionaliteten men sidan blinkar till.
 
 *Gruppmedlemmar*
 
