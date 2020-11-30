@@ -74,19 +74,6 @@ function deleteTodo(clickEvent) {
         
     localStorage.setItem("todoList", JSON.stringify(listWithTodo))
 
-    console.log(divForTodo.id)
-
     printTodosInAside()
     fetchDaysFromApi()
-
-    // const index = listWithTodo.indexOf(divForTodo);
-    // listWithTodo.splice(index, 1)
-
-    // let index = listWithTodo.length
-
-    // listWithTodo.splice(index, 1)
-
-    // listWithTodo.findindex()
-         
-    // localStorage.removeItem(listWithTodo) 
 }
