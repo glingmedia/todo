@@ -5,7 +5,7 @@ function main() {
 }
 
 function addEventListeners() {
-    fetchDaysFromApi()
+    fetchMonthFromApi()
     startClock()
     addTodoOnButton()
     printTodosInAside()

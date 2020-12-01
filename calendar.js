@@ -1,4 +1,5 @@
-async function fetchDaysFromApi() {
+// Fetchar månaden från api.
+async function fetchMonthFromApi() {
     try {
         // const today = new Date();
         // let month = today.getMonth();
@@ -18,6 +19,7 @@ async function fetchDaysFromApi() {
     }
 }
 
+// Gör container där dagarna ska presenteras och kallar på funktionerna getDays och createItems.
 function presentDays(allDaysForNovember) {
     const container = document.getElementById('calendar-container');
     container.innerHTML = "";
@@ -27,37 +29,38 @@ function presentDays(allDaysForNovember) {
     container.append(...listItems);    
 }
 
+// Gör listan med divarna som dagarna presenteras i.
 function createListItems(daysOfMonth) {
-    const listItems = []
-    let listWithTodo = JSON.parse(localStorage.getItem("todoList")) || []
+    const listItems = [];
+    let listWithTodo = JSON.parse(localStorage.getItem("todoList")) || [];
   
     for (const day of daysOfMonth) {
-        const todosToday = document.createElement('p')
-        
-        todosToday.innerText = ''
-
-        todosToday.classList = 'calendar-item'
+        const todosToday = document.createElement('p');
+        todosToday.innerText = '';
+        todosToday.classList = 'calendar-item';
         
         const dayDiv = document.createElement('div');
-        dayDiv.classList = 'dayDiv'
-        let dayToday = new Date(day.datum).getDate()
+        dayDiv.classList = 'dayDiv';
+
+        let dayToday = new Date(day.datum).getDate();
         dayDiv.innerHTML = dayToday;
         listItems.push(dayDiv);
 
-        dayDiv.appendChild(todosToday)
+        dayDiv.appendChild(todosToday);
         
-        let count = 0
+        let count = 0;
         for (const todo of listWithTodo) {
             if (todo.date == day.datum) {
-                count++
+                count++;
             }
         }
-        todosToday.innerText = 'Memos:' + ' ' + count
+        todosToday.innerText = 'Memos:' + ' ' + count;
     }
     
     return listItems;
 }
 
+// Pushar in dagarna i listan som skickas med till funktionen createListItems.
 function getDays(allDaysForNovember) {
     const daysOfMonth = [];
     
@@ -67,5 +70,5 @@ function getDays(allDaysForNovember) {
         }
     }
 
-    return daysOfMonth
+    return daysOfMonth;
 }

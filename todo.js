@@ -1,8 +1,10 @@
+// Lägger till onClick-funktion på knappen.
 function addTodoOnButton(){
-    const buttonTodo = document.getElementById('submitBtn')
-    buttonTodo.addEventListener('click', addTodo)
+    const buttonTodo = document.getElementById('submitBtn');
+    buttonTodo.addEventListener('click', addTodo);
 }
 
+// Sparar värdet av inputfälten.
 function addTodo() {
     const todoDate = document.getElementById('date').value;
     const todoInput = document.getElementById('todoInput').value;
@@ -11,67 +13,70 @@ function addTodo() {
     printTodosInAside()   
 }
 
+// Lägger till todos i localstorage.
 function addToStorage(todo) {
-    let listWithTodo = JSON.parse(localStorage.getItem("todoList"))
+    let listWithTodo = JSON.parse(localStorage.getItem("todoList"));
 
     if (listWithTodo) {
-        listWithTodo.push(todo)
+        listWithTodo.push(todo);
     } else {
         listWithTodo = []
-        listWithTodo.push(todo)
+        listWithTodo.push(todo);
     }
 
-    localStorage.setItem("todoList", JSON.stringify(listWithTodo))
+    localStorage.setItem("todoList", JSON.stringify(listWithTodo));
 }
 
+// Printar ut todos i asiden.
 function printTodosInAside() {
-    const aside = document.getElementById('todoDiv')
-    aside.innerHTML = ""
-    const todo = JSON.parse(localStorage.getItem("todoList")) || []
+    const aside = document.getElementById('todoDiv');
+    aside.innerHTML = "";
+    const todo = JSON.parse(localStorage.getItem("todoList")) || [];
 
     for (let i = 0; i < todo.length; i++) {
         const todosToPrint = todo[i];
-        const divForTodo = document.createElement('div')
+        const divForTodo = document.createElement('div');
 
-        divForTodo.id = i
+        divForTodo.id = i;
 
-        const dateTodo = document.createElement('h5')
-        dateTodo.classList = 'todoDate'
-        dateTodo.innerText = todosToPrint.date
+        const dateTodo = document.createElement('h5');
+        dateTodo.classList = 'todoDate';
+        dateTodo.innerText = todosToPrint.date;
 
-        const textDiv = document.createElement('div')
-        textDiv.classList = 'textDiv'
+        const textDiv = document.createElement('div');
+        textDiv.classList = 'textDiv';
 
-        const textTodo = document.createElement('p')
-        textTodo.classList = 'todoText'
-        textTodo.innerText = todosToPrint.text
+        const textTodo = document.createElement('p');
+        textTodo.classList = 'todoText';
+        textTodo.innerText = todosToPrint.text;
 
-        const deleteBtn = document.createElement('p')
-        deleteBtn.classlist = 'deleteBtn'
-        deleteBtn.innerText = '❌'
-        deleteBtn.addEventListener('click', deleteTodo)
+        const deleteBtn = document.createElement('p');
+        deleteBtn.classlist = 'deleteBtn';
+        deleteBtn.innerText = '❌';
+        deleteBtn.addEventListener('click', deleteTodo);
 
 
-        textDiv.appendChild(textTodo)
-        dateTodo.appendChild(deleteBtn)
-        divForTodo.appendChild(dateTodo)
-        divForTodo.appendChild(textDiv)
+        textDiv.appendChild(textTodo);
+        dateTodo.appendChild(deleteBtn);
+        divForTodo.appendChild(dateTodo);
+        divForTodo.appendChild(textDiv);
 
-        aside.appendChild(divForTodo)
+        aside.appendChild(divForTodo);
     }
 }
 
+// Funktion för att tabort todos i localstorage och i asiden.
 function deleteTodo(clickEvent) {
     
-    let listWithTodo = JSON.parse(localStorage.getItem("todoList"))
+    let listWithTodo = JSON.parse(localStorage.getItem("todoList"));
     
-    let divForTodo = clickEvent.target.parentElement.parentElement
+    let divForTodo = clickEvent.target.parentElement.parentElement;
     
-    let index = divForTodo.id
-    listWithTodo.splice(index, 1)
+    let index = divForTodo.id;
+    listWithTodo.splice(index, 1);
         
-    localStorage.setItem("todoList", JSON.stringify(listWithTodo))
+    localStorage.setItem("todoList", JSON.stringify(listWithTodo));
 
     printTodosInAside()
-    fetchDaysFromApi()
+    fetchMonthFromApi()
 }
