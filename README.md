@@ -9,6 +9,8 @@
 Vi har uppmärksammat en liten bugg då man skapar ett memo så "refreshas" hela sidan.  
 Detta påverkar inte funktionaliteten men sidan blinkar till.
 
+Ibland i Git Graph så står Jonas som "unknown" author. Hovrar man över så ser man dock att det är rätt?
+
 *Gruppmedlemmar*  
 Jonas Glingert  
 Amanda Ståhlberg  
