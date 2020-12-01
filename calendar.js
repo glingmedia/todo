@@ -7,7 +7,7 @@ async function fetchDaysFromApi() {
         // let month = today.getMonth()+1;
         // const url = 'http://sholiday.faboul.se/dagar/v2.1/2020/'+month;
 
-        const url = 'http://sholiday.faboul.se/dagar/v2.1/2020/11';
+        const url = 'https://sholiday.faboul.se/dagar/v2.1/2020/11';
 
         const result = await fetch(url);
         const data = await result.json();
