@@ -1,10 +1,8 @@
 // Fetchar månaden från api.
 async function fetchMonthFromApi() {
     try {
+        // För att hämta alla månader
         // const today = new Date();
-        // let month = today.getMonth();
-
-        //För att hämta alla månader
         // let month = today.getMonth()+1;
         // const url = 'http://sholiday.faboul.se/dagar/v2.1/2020/'+month;
 

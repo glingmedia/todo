@@ -20,7 +20,7 @@ function addToStorage(todo) {
     if (listWithTodo) {
         listWithTodo.push(todo);
     } else {
-        listWithTodo = []
+        listWithTodo = [];
         listWithTodo.push(todo);
     }
 
@@ -65,7 +65,7 @@ function printTodosInAside() {
     }
 }
 
-// Funktion för att tabort todos i localstorage och i asiden.
+// Funktion för att ta bort todos i localstorage och i asiden.
 function deleteTodo(clickEvent) {
     
     let listWithTodo = JSON.parse(localStorage.getItem("todoList"));
